@@ -2,22 +2,23 @@
 Bash script that uses `govc` to deploy OVF templates (specifically Ops Man VMs)
 
 ## Initial Setup
-Make script executable
+1. Make script executable
 ```bash
 chmod +x ovfdeploy.sh
 ```
 
-Install binary release of `govc` and `jq` 
+2. Install binary release of `govc` and `jq` 
 
 `govc` - https://github.com/vmware/govmomi/releases
 
 `jq` - https://github.com/stedolan/jq/releases
 
-Move both binaries to an executable environmental path
+3. Move both binaries to an executable environmental path
 ```bash
 sudo mv govc /usr/local/bin && sudo mv jq /usr/local/bin
 ```
 
+4. Install Opsman VM from here - https://network.pivotal.io/products/ops-manager/#/releases/1154098
 
 
 
