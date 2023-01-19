@@ -7,6 +7,18 @@ Make script executable
 chmod +x ovfdeploy.sh
 ```
 
+Install binary release of `govc` and `jq` 
+`govc` - https://github.com/vmware/govmomi/releases
+`jq` - https://github.com/stedolan/jq/releases
+
+Move both binaries to an executable environmental path
+```bash
+sudo mv govc /usr/local/bin && sudo mv jq /usr/local/bin
+```
+
+
+
+
 ## Configuration
 Edit the following environmental variables in the script: 
 
