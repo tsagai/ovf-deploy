@@ -26,28 +26,28 @@ sudo mv govc /usr/local/bin && sudo mv jq /usr/local/bin
 Edit the following environmental variables in the script: 
 
 ```bash
-export GOVC_USERNAME=""
-export GOVC_PASSWORD=""
-export GOVC_URL=""
-export GOVC_INSECURE=
-export GOVC_DATACENTER=
-export GOVC_DATASTORE=
-export GOVC_NETWORK=
-export GOVC_RESOURCE_POOL=
+GOVC_USERNAME=""
+GOVC_PASSWORD=""
+GOVC_URL=""
+GOVC_INSECURE=
+GOVC_DATACENTER=
+GOVC_DATASTORE=
+GOVC_NETWORK=
+GOVC_RESOURCE_POOL=
 ```
 
 And 
 
 ```bash
-export IP=""
-export NETMASK0=""
-export GATEWAY=""
-export DNS=""
-export NTP_SERVER=""
-export PUB_SSH_KEY=""
-export CUSTOM_HOSTNAME=""
-export NETWORK_NAME=""
-export VM_NAME=""
+IP=""
+NETMASK0=""
+GATEWAY=""
+DNS=""
+NTP_SERVER=""
+PUB_SSH_KEY=""
+CUSTOM_HOSTNAME=""
+NETWORK_NAME=""
+VM_NAME=""
 ```
 
 If these are not defined, the script will not work properly
