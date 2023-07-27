@@ -1,5 +1,5 @@
 # ovf-deploy
-Bash script that uses `govc` to deploy OVF templates (specifically Ops Man VMs) to VSphere
+Bash script that uses `govc` to deploy OVF templates (specifically Tanuz Ops Manager VMs) to VSphere
 
 ## Initial Setup
 1. Make script executable
