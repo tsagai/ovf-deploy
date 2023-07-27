@@ -9,28 +9,28 @@ if [ -z "$1" ]; then
 fi
 
 # Env variables for particular vSphere user
-export GOVC_USERNAME=""
-export GOVC_PASSWORD=""
-export GOVC_URL=""
-export GOVC_INSECURE=
-export GOVC_DATACENTER=
-export GOVC_DATASTORE=
-export GOVC_NETWORK=
-export GOVC_RESOURCE_POOL=
+GOVC_USERNAME=""
+GOVC_PASSWORD=""
+GOVC_URL=""
+GOVC_INSECURE=
+GOVC_DATACENTER=
+GOVC_DATASTORE=
+GOVC_NETWORK=
+GOVC_RESOURCE_POOL=
 
 # Extract JSON template from OVA file
 govc import.spec $1 | python3 -m json.tool > vm.json && echo "VM JSON created at: $PWD/vm.json" || echo "Something went wrong"
 
 # Env variable for OVF template injection
-export IP=""
-export NETMASK0=""
-export GATEWAY=""
-export DNS=""
-export NTP_SERVER=""
-export PUB_SSH_KEY=""
-export CUSTOM_HOSTNAME=""
-export NETWORK_NAME=""
-export VM_NAME=""
+IP=""
+NETMASK0=""
+GATEWAY=""
+DNS=""
+NTP_SERVER=""
+PUB_SSH_KEY=""
+CUSTOM_HOSTNAME=""
+NETWORK_NAME=""
+VM_NAME=""
 
 # Create final.json file with env variables above injected
 jq --arg ip "$IP" \
